@@ -1,0 +1,30 @@
+PRINCIPINTE 
+
+PUNTOS: 600
+ESTUDIANTE:
+juan
+perez
+GRADO: 7
+COLEGIO:
+claret
+
+INTERMEDIO 
+
+PUNTOS: 895
+ESTUDIANTE:
+nestor
+valencia
+GRADO: 7
+COLEGIO:
+simon bolivar
+
+AVANZADO 
+
+PUNTOS: 1000
+ESTUDIANTE:
+andres
+valencia
+GRADO: 7
+COLEGIO:
+simon bolivar
+

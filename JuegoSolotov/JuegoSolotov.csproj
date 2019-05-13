@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{01D9C3E0-0CC0-4301-B9A2-948714FFC45A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>JuegoSolotov</RootNamespace>
+    <AssemblyName>JuegoSolotov</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Background.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Background.Designer.cs">
+      <DependentUpon>Background.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciencias\CienciaFive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciencias\CienciaFive.Designer.cs">
+      <DependentUpon>CienciaFive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciencias\CienciasFour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciencias\CienciasFour.Designer.cs">
+      <DependentUpon>CienciasFour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciencias\CienciasSix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciencias\CienciasSix.Designer.cs">
+      <DependentUpon>CienciasSix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciencias\CienciasOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciencias\CienciasOne.Designer.cs">
+      <DependentUpon>CienciasOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciencias\CienciasSeven.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciencias\CienciasSeven.Designer.cs">
+      <DependentUpon>CienciasSeven.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciencias\CienciasThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciencias\CienciasThree.Designer.cs">
+      <DependentUpon>CienciasThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ciencias\CienciasTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ciencias\CienciasTwo.Designer.cs">
+      <DependentUpon>CienciasTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\GeografiaFive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geografia\GeografiaFive.Designer.cs">
+      <DependentUpon>GeografiaFive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\GeografiaFour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geografia\GeografiaFour.Designer.cs">
+      <DependentUpon>GeografiaFour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\GeografiaOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geografia\GeografiaOne.Designer.cs">
+      <DependentUpon>GeografiaOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\GeografiaSix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geografia\GeografiaSix.Designer.cs">
+      <DependentUpon>GeografiaSix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\GeografiaThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geografia\GeografiaThree.Designer.cs">
+      <DependentUpon>GeografiaThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Geografia\GeografiaTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Geografia\GeografiaTwo.Designer.cs">
+      <DependentUpon>GeografiaTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasFive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasFive.Designer.cs">
+      <DependentUpon>MatematicasFive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasFour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasFour.Designer.cs">
+      <DependentUpon>MatematicasFour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasOne.Designer.cs">
+      <DependentUpon>MatematicasOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasSeven.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasSeven.Designer.cs">
+      <DependentUpon>MatematicasSeven.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasSix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasSix.Designer.cs">
+      <DependentUpon>MatematicasSix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasThree.Designer.cs">
+      <DependentUpon>MatematicasThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Matematicas\MatematicasTwo.Designer.cs">
+      <DependentUpon>MatematicasTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuFour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuFour.Designer.cs">
+      <DependentUpon>MenuFour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuOne.Designer.cs">
+      <DependentUpon>MenuOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuThree.Designer.cs">
+      <DependentUpon>MenuThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuTwo.Designer.cs">
+      <DependentUpon>MenuTwo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sociales\SocialesFive.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sociales\SocialesFive.Designer.cs">
+      <DependentUpon>SocialesFive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sociales\SocialesFour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sociales\SocialesFour.Designer.cs">
+      <DependentUpon>SocialesFour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sociales\SocialesOne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sociales\SocialesOne.Designer.cs">
+      <DependentUpon>SocialesOne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sociales\SocialesSeven.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sociales\SocialesSeven.Designer.cs">
+      <DependentUpon>SocialesSeven.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sociales\SocialesSix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sociales\SocialesSix.Designer.cs">
+      <DependentUpon>SocialesSix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sociales\SocialesThree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sociales\SocialesThree.Designer.cs">
+      <DependentUpon>SocialesThree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sociales\SocialesTwo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sociales\SocialesTwo.Designer.cs">
+      <DependentUpon>SocialesTwo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Background.resx">
+      <DependentUpon>Background.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciencias\CienciaFive.resx">
+      <DependentUpon>CienciaFive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciencias\CienciasFour.resx">
+      <DependentUpon>CienciasFour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciencias\CienciasOne.resx">
+      <DependentUpon>CienciasOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciencias\CienciasSeven.resx">
+      <DependentUpon>CienciasSeven.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciencias\CienciasSix.resx">
+      <DependentUpon>CienciasSix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciencias\CienciasThree.resx">
+      <DependentUpon>CienciasThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ciencias\CienciasTwo.resx">
+      <DependentUpon>CienciasTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\GeografiaFive.resx">
+      <DependentUpon>GeografiaFive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\GeografiaFour.resx">
+      <DependentUpon>GeografiaFour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\GeografiaOne.resx">
+      <DependentUpon>GeografiaOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\GeografiaSix.resx">
+      <DependentUpon>GeografiaSix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\GeografiaThree.resx">
+      <DependentUpon>GeografiaThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Geografia\GeografiaTwo.resx">
+      <DependentUpon>GeografiaTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matematicas\MatematicasFive.resx">
+      <DependentUpon>MatematicasFive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matematicas\MatematicasFour.resx">
+      <DependentUpon>MatematicasFour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matematicas\MatematicasOne.resx">
+      <DependentUpon>MatematicasOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matematicas\MatematicasSeven.resx">
+      <DependentUpon>MatematicasSeven.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matematicas\MatematicasSix.resx">
+      <DependentUpon>MatematicasSix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matematicas\MatematicasThree.resx">
+      <DependentUpon>MatematicasThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Matematicas\MatematicasTwo.resx">
+      <DependentUpon>MatematicasTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuFour.resx">
+      <DependentUpon>MenuFour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuOne.resx">
+      <DependentUpon>MenuOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuThree.resx">
+      <DependentUpon>MenuThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTwo.resx">
+      <DependentUpon>MenuTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Sociales\SocialesFive.resx">
+      <DependentUpon>SocialesFive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sociales\SocialesFour.resx">
+      <DependentUpon>SocialesFour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sociales\SocialesOne.resx">
+      <DependentUpon>SocialesOne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sociales\SocialesSeven.resx">
+      <DependentUpon>SocialesSeven.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sociales\SocialesSix.resx">
+      <DependentUpon>SocialesSix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sociales\SocialesThree.resx">
+      <DependentUpon>SocialesThree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sociales\SocialesTwo.resx">
+      <DependentUpon>SocialesTwo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MenuOne.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MenuTwo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MenuThree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MatematicasOne.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CienciasOne.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\GeografiaOne.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SocialesOne.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MatematicasTwo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CienciasTwo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\queens-crown.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MatematicasThree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CienciasThree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\GeografiaTwo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SocialesTwo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CienciasFour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MatematicasFour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\GeografiaThree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SocialesThree.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MatematicasFive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CienciasFive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MatematicasSix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CienciasSix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\GeografiaFour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SocialesFour.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\MatematicasSeven.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\CienciasSeven.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SocialesFive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\GeografiaFive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\GeografiaSix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SocialesSix.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\GeografiaSeven.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SocialesSeven.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

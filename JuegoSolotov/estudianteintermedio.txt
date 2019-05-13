@@ -1,0 +1,7 @@
+PUNTOS: 1000
+ESTUDIANTE:
+daniel
+valencia
+GRADO: 6
+COLEGIO:
+simon bolivar

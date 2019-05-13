@@ -1,0 +1,7 @@
+PUNTOS: 0
+ESTUDIANTE:
+Rafael
+Gomez
+GRADO: 8
+COLEGIO:
+Claret

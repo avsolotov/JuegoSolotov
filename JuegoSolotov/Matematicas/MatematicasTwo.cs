@@ -70,8 +70,7 @@ namespace JuegoSolotov
         {
             SoundPlayer sonido = new SoundPlayer(Application.StartupPath + @"\sound\sonido_Menu3.mp3");
             sonido.PlayLooping();
-            string tempurlpuntosprincipiante = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteprincipiante" + ".txt";
-            lblpuntosprincipiantes.Text = File.ReadAllText(tempurlpuntosprincipiante);
+            lblpuntosprincipiantes.Text = File.ReadAllText(Application.StartupPath + @"\archivo\estudianteprincipiante.txt");
             lblnombre.Text = Globals.nombre;
             lblpuntos.Text = Globals.pointsprincipiante.ToString();
         }

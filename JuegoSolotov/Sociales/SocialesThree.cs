@@ -70,8 +70,7 @@ namespace JuegoSolotov.Sociales
         {
             SoundPlayer sonido = new SoundPlayer(Application.StartupPath + @"\sound\sonido_Menu3.mp3");
             sonido.PlayLooping();
-            string tempurlpuntosintermedio = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteintermedio" + ".txt";
-            lblpuntosintermedio.Text = File.ReadAllText(tempurlpuntosintermedio);
+            lblpuntosintermedio.Text = File.ReadAllText(Application.StartupPath + @"\archivo\estudianteintermedio.txt");
             lblnombre.Text = Globals.nombre;
             lblpuntos.Text = Globals.pointsintermedio.ToString();
         }

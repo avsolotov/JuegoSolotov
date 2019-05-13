@@ -36,23 +36,20 @@ namespace JuegoSolotov
         {
             SoundPlayer sonido = new SoundPlayer(Application.StartupPath + @"\sound\sonido_Menu3.mp3");
             sonido.PlayLooping();
-            string tempurlpuntosprincipiante = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteprincipiante" + ".txt";
-            string tempurlpuntosintermedio = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteintermedio" + ".txt";
-            string tempurlpuntosavanzado = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteavanzado" + ".txt";
-            lblpuntosprincipiantes.Text = File.ReadAllText(tempurlpuntosprincipiante);
-            lblpuntosintermedio.Text = File.ReadAllText(tempurlpuntosintermedio);
-            lblpuntosavanzado.Text = File.ReadAllText(tempurlpuntosavanzado);
+            lblpuntosprincipiantes.Text = File.ReadAllText(Application.StartupPath + @"\archivo\estudianteprincipiante.txt");
+            lblpuntosintermedio.Text = File.ReadAllText(Application.StartupPath + @"\archivo\estudianteintermedio.txt");
+            lblpuntosavanzado.Text = File.ReadAllText(Application.StartupPath + @"\archivo\estudianteavanzado.txt");
         }
 
         private void Btnguardar_Click(object sender, EventArgs e)
         {
             SoundPlayer sonido3 = new SoundPlayer(Application.StartupPath + @"\sound\boton_sonidoN.mp3");
             sonido3.Play();
-            string tempurlpuntosprincipiante = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteprincipiante" + ".txt";
-            string tempurlpuntosintermedio = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteintermedio" + ".txt";
-            string tempurlpuntosavanzado = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteavanzado" + ".txt";
-            
-            string[] lines = { "PRINCIPINTE \n", File.ReadAllText(tempurlpuntosprincipiante),"INTERMEDIO \n", File.ReadAllText(tempurlpuntosintermedio),"AVANZADO \n", File.ReadAllText(tempurlpuntosavanzado)};
+            lblpuntosprincipiantes.Text = File.ReadAllText(Application.StartupPath + @"\archivo\estudianteprincipiante.txt");
+            lblpuntosintermedio.Text = File.ReadAllText(Application.StartupPath + @"\archivo\estudianteintermedio.txt");
+            lblpuntosavanzado.Text = File.ReadAllText(Application.StartupPath + @"\archivo\estudianteavanzado.txt");
+
+            string[] lines = { "PRINCIPINTE \n", File.ReadAllText(Application.StartupPath + @"\archivo\estudianteprincipiante.txt"),"INTERMEDIO \n", File.ReadAllText(Application.StartupPath + @"\archivo\estudianteintermedio.txt"),"AVANZADO \n", File.ReadAllText(Application.StartupPath + @"\archivo\estudianteavanzado.txt") };
 
             File.WriteAllLines(@"C:\Users\AUXILIAR\source\repos\JuegoSolotov\JuegoSolotov\estudiantescalificados.txt", lines);
 

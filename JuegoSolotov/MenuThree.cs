@@ -98,12 +98,9 @@ namespace JuegoSolotov
         {
             SoundPlayer sonido = new SoundPlayer(Application.StartupPath + @"\sound\sonido_Menu.mp3");
             sonido.PlayLooping();
-            string tempurlpuntosprincipiante = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteprincipiante" + ".txt";
-            string tempurlpuntosintermedio = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteintermedio" + ".txt";
-            string tempurlpuntosavanzado = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteavanzado" + ".txt";
-            lblpuntosprincipiantes.Text = File.ReadAllText(tempurlpuntosprincipiante);
-            lblpuntosintermedio.Text = File.ReadAllText(tempurlpuntosintermedio);
-            lblpuntosavanzado.Text = File.ReadAllText(tempurlpuntosavanzado);
+            lblpuntosprincipiantes.Text = File.ReadAllText(Application.StartupPath + @"\archivo\estudianteprincipiante.txt");
+            lblpuntosintermedio.Text = File.ReadAllText(Application.StartupPath + @"\archivo\estudianteintermedio.txt");
+            lblpuntosavanzado.Text = File.ReadAllText(Application.StartupPath + @"\archivo\estudianteavanzado.txt");
         }
     }
 }

@@ -92,6 +92,8 @@ public static class Globals
     public static string destinatario = "avsolotov@gmail.com";
     public static string password = "andres55123.";
     public static string tempurlestudiantescalificados = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\estudiantescalificados.txt";
+    public static string tempurlpuntosintermedio = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteintermedio" + ".txt";
+    public static string tempurlpuntosavanzado = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteavanzado" + ".txt";
 
     public static string nombre = " ";
    

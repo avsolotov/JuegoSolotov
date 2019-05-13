@@ -1,7 +1,0 @@
-PUNTOS: 600
-ESTUDIANTE:
-Andres
-Valencia
-GRADO: 7
-COLEGIO:
-San Juan

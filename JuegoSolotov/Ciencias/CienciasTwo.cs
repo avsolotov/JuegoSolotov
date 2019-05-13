@@ -33,7 +33,7 @@ namespace JuegoSolotov
                 string colegioprincipiantes = Interaction.InputBox("Colegio");
                 //GUARDEME LINEA X LINEA EN ARCHIVO TXT QUE YA TENGO CREADO
                 string[] lines = { "PUNTOS: " + Globals.pointsprincipiante.ToString(), "ESTUDIANTE:" + "\n" + nombreprincipiantes, apellidoprincipiantes, "GRADO: " + gradoprincipiantes, "COLEGIO:\n" + colegioprincipiantes };
-                File.WriteAllLines(@"C:\Users\AUXILIAR\source\repos\JuegoSolotov\JuegoSolotov\estudianteprincipiante.txt", lines);
+                File.WriteAllLines(Application.StartupPath + @"\archivo\estudianteprincipiante.txt", lines);
                 Hide();
                 //LLAME Y MUESTRE ME LA INTERFAZ MENU THREE
                 var menuthree = new MenuThree();
@@ -72,7 +72,7 @@ namespace JuegoSolotov
                 string colegioprincipiantes = Interaction.InputBox("Colegio");
                 //GUARDEME LINEA X LINEA EN ARCHIVO TXT QUE YA TENGO CREADO 
                 string[] lines = { "PUNTOS: " + Globals.pointsprincipiante.ToString(), "ESTUDIANTE:" + "\n" + nombreprincipiantes, apellidoprincipiantes, "GRADO: " + gradoprincipiantes, "COLEGIO:\n" + colegioprincipiantes };
-                File.WriteAllLines(@"C:\Users\AUXILIAR\source\repos\JuegoSolotov\JuegoSolotov\estudianteprincipiante.txt", lines);
+                File.WriteAllLines(Application.StartupPath + @"\archivo\estudianteprincipiante.txt", lines);
                 Hide();
                 //LLAME Y MUESTRE ME LA INTERFAZ MENU THREE
                 var menuthree = new MenuThree();
@@ -111,7 +111,7 @@ namespace JuegoSolotov
                 string colegioprincipiantes = Interaction.InputBox("Colegio");
                 //GUARDEME LINEA X LINEA EN ARCHIVO TXT QUE YA TENGO CREADO 
                 string[] lines = { "PUNTOS: " + Globals.pointsprincipiante.ToString(), "ESTUDIANTE:" + "\n" + nombreprincipiantes, apellidoprincipiantes, "GRADO: " + gradoprincipiantes, "COLEGIO:\n" + colegioprincipiantes };
-                File.WriteAllLines(@"C:\Users\AUXILIAR\source\repos\JuegoSolotov\JuegoSolotov\estudianteprincipiante.txt", lines);
+                File.WriteAllLines(Application.StartupPath + @"\archivo\estudianteprincipiante.txt", lines);
                 Hide();
                 //LLAME Y MUESTRE ME LA INTERFAZ MENU THREE
                 var menuthree = new MenuThree();
@@ -150,7 +150,7 @@ namespace JuegoSolotov
                 string colegioprincipiantes = Interaction.InputBox("Colegio");
                 //GUARDEME LINEA X LINEA EN ARCHIVO TXT QUE YA TENGO CREADO 
                 string[] lines = { "PUNTOS: " + Globals.pointsprincipiante.ToString(), "ESTUDIANTE:" + "\n" + nombreprincipiantes, apellidoprincipiantes, "GRADO: " + gradoprincipiantes, "COLEGIO:\n" + colegioprincipiantes };
-                File.WriteAllLines(@"C:\Users\AUXILIAR\source\repos\JuegoSolotov\JuegoSolotov\estudianteprincipiante.txt", lines);
+                File.WriteAllLines(Application.StartupPath + @"\archivo\estudianteprincipiante.txt", lines);
                 Hide();
                 //LLAME Y MUESTRE ME LA INTERFAZ MENU THREE
                 var menuthree = new MenuThree();
@@ -174,8 +174,7 @@ namespace JuegoSolotov
         {
             SoundPlayer sonido = new SoundPlayer(Application.StartupPath + @"\sound\sonido_Menu3.mp3");
             sonido.PlayLooping();
-            string tempurlpuntosprincipiante = "C:\\Users\\AUXILIAR\\source\\repos\\JuegoSolotov\\JuegoSolotov\\" + "estudianteprincipiante" + ".txt";
-            lblpuntosprincipiantes.Text = File.ReadAllText(tempurlpuntosprincipiante);
+            lblpuntosprincipiantes.Text = File.ReadAllText(Application.StartupPath + @"\archivo\estudianteprincipiante.txt");
             lblnombre.Text = Globals.nombre;
             lblpuntos.Text = Globals.pointsprincipiante.ToString();
         }
